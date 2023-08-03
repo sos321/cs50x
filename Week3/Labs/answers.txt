@@ -1,0 +1,16 @@
+sort1 uses: Bubble sort
+
+How do you know?: longest time for the reversed10000.txt and shortest time for sorted10000.txt
+
+sort2 uses: Selection sort
+
+How do you know?: Longest time for sorted10000.txt
+
+sort3 uses: Merge sort
+
+How do you know?: All times are almost simmilar and low
+
+
+reversed10000: 32.26, 29.92, 29.09
+random10000: 30.86, 29.80, 29.28
+sorted10000: 28.49, 30.6, 29.66
