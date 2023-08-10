@@ -19,18 +19,17 @@ int main(int argc, char *argv[])
         return 2;
     }
 
+    char buffer[7];
+
     // Create array to store plate numbers
-    char *plates[PLATESAMMOUNT];
+    char plates[PLATESAMMOUNT][7];
 
     for (int i = 0; i < PLATESAMMOUNT; i++) {
-        char* buffer = calloc(7, sizeof(char));
         fread(buffer, 7, 1, infile);
 
         buffer[6] = '\0';
 
-        plates[i] = buffer;
-
-        free(buffer);
+        strcpy(plates[i], buffer);
     }
 
     // Print to console
